@@ -1,0 +1,99 @@
+{
+  "shape": [
+    5000,
+    9
+  ],
+  "missing_after": {
+    "lead_source": 0,
+    "industry": 0,
+    "employment_status": 0,
+    "location": 0,
+    "annual_income": 0,
+    "number_of_courses_viewed": 0,
+    "interaction_count": 0,
+    "lead_score": 0,
+    "converted": 0
+  },
+  "q1_mode_industry": "technology",
+  "numeric_cols": [
+    "annual_income",
+    "number_of_courses_viewed",
+    "interaction_count",
+    "lead_score"
+  ],
+  "q2_corr": {
+    "annual_income x number_of_courses_viewed": 0.1613,
+    "annual_income x interaction_count": 0.1228,
+    "annual_income x lead_score": 0.2295,
+    "number_of_courses_viewed x annual_income": 0.1613,
+    "number_of_courses_viewed x interaction_count": 0.7216,
+    "number_of_courses_viewed x lead_score": 0.7572,
+    "interaction_count x annual_income": 0.1228,
+    "interaction_count x number_of_courses_viewed": 0.7216,
+    "interaction_count x lead_score": 0.9157,
+    "lead_score x annual_income": 0.2295,
+    "lead_score x number_of_courses_viewed": 0.7572,
+    "lead_score x interaction_count": 0.9157
+  },
+  "q2_scores": {
+    "interaction_count and lead_score": 0.9157,
+    "number_of_courses_viewed and lead_score": 0.7572,
+    "number_of_courses_viewed and interaction_count": 0.7216,
+    "annual_income and interaction_count": 0.1228
+  },
+  "q2_best": "interaction_count and lead_score",
+  "split_sizes": {
+    "train": 3000,
+    "val": 1000,
+    "test": 1000
+  },
+  "q3_mi": {
+    "lead_source": 0.03,
+    "industry": 0.0,
+    "employment_status": 0.02,
+    "location": 0.0
+  },
+  "q3_best": "lead_source",
+  "q4_accuracy": 0.645,
+  "q4_accuracy_rounded2": 0.65,
+  "q5_base_accuracy": 0.645,
+  "q5_diffs": {
+    "lead_source": 0.003,
+    "industry": 0.0,
+    "employment_status": 0.0,
+    "location": 0.0,
+    "annual_income": -0.079,
+    "number_of_courses_viewed": 0.002,
+    "interaction_count": 0.044,
+    "lead_score": 0.001
+  },
+  "q5_diffs_full": {
+    "lead_source": 0.0030000000000000027,
+    "industry": 0.0,
+    "employment_status": 0.0,
+    "location": 0.0,
+    "annual_income": -0.07899999999999996,
+    "number_of_courses_viewed": 0.0020000000000000018,
+    "interaction_count": 0.04400000000000004,
+    "lead_score": 0.0010000000000000009
+  },
+  "q5_subset": {
+    "lead_source": 0.003,
+    "number_of_courses_viewed": 0.002,
+    "interaction_count": 0.044
+  },
+  "q5_smallest": "number_of_courses_viewed",
+  "q6_scores": {
+    "1e-06": 0.598,
+    "1e-05": 0.598,
+    "0.0001": 0.613,
+    "0.001": 0.645
+  },
+  "q6_full": {
+    "1e-06": 0.598,
+    "1e-05": 0.598,
+    "0.0001": 0.613,
+    "0.001": 0.645
+  },
+  "q6_best": "0.001"
+}
